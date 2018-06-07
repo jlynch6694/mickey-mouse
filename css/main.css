@@ -1,0 +1,76 @@
+.head {
+  width: 400px;
+  height: 400px;
+  color: black;
+  position: absolute;
+  top: 0px;
+  left: 50px;
+  box-shadow:
+  450px 150px 0px 0px currentcolor,
+  450px 150px 0px 0px currentcolor;
+  border-radius: 100%;
+
+}
+
+.eyes {
+  width:80px;
+  height:80px;
+  position: absolute;
+  top: 220px;
+  left: 220px;
+  border-radius: 100%;
+  color: black;
+  box-shadow:
+    350px 50px 0px 0px white,
+    520px 50px 0px 0px white;
+}
+
+.ears {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 80px;
+    left: 120px;
+    border-radius: 100%;
+    color: black;
+    box-shadow:
+      250px 50px 0px 0px currentcolor,
+      710px 50px 0px 0px currentcolor;
+  }
+.nose {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 290px;
+  left: 405px;
+  border-radius: 100%;
+  color: black;
+  box-shadow:
+  250px 50px 0px 0px white;
+}
+
+.ears::before {
+  width: 50px;
+  height: 50px;
+  content:"";
+  /* necessary to show before pseudoclass */
+  position: absolute;
+  top: 280px;
+  left: 599px;
+  border-bottom: 180px solid white;
+  border-radius: 100% 100% 100% 100%;
+  transform: rotate(240deg);
+}
+
+.ears::after {
+  width: 50px;
+  height: 50px;
+  content:"";
+  /* necessary to show before pseudoclass */
+  position: absolute;
+  top: 280px;
+  left: 505px;
+  border-bottom: 180px solid white;
+  border-radius: 100% 100% 100% 100%;
+  transform: rotate(120deg);
+}
